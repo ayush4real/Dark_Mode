@@ -1,0 +1,92 @@
+/* :root{
+  --clr-bg: #ffff;
+  --clr-font: #282c35;
+  --clr-primary: #d23669;
+} */
+
+*,
+::after,
+::before{
+  /* margin: 0;
+  padding: 0; */
+  box-sizing: border-box;
+  transition: all 0.4s;
+}
+
+.dark-theme{
+  --clr-bg: #282c35;
+  --clr-font: #ffff;
+  --clr-primary: #ca00d5;
+}
+
+.light-theme{
+  --clr-bg: #ffff;
+  --clr-font: #282c35;
+  --clr-primary: #d23669;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--clr-bg);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+main{
+  padding: 2rem 1.25rem;
+  margin: 0 auto;
+  /* width: 800px; */
+}
+
+button, h2, h1{
+  text-transform: capitalize;
+}
+
+h1{
+  font-size: 2.5rem;
+  color: var(--clr-font);
+}
+
+h2{
+  color: var(--clr-primary);
+}
+
+p, span{
+  color: var(--clr-font);
+}
+
+.btn{
+  background-color: var(--clr-primary);
+  color: var(--clr-bg);
+  border-radius: 5px;
+  padding: 0.25rem 1rem;
+  /* border-style: none; */
+  border: 2px solid var(--clr-primary);
+  font-size: 18px;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+.btn:focus{
+  outline: 2px solid var(--clr-font);
+}
+
+.nav-center{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media screen and (min-width: 600px) {
+  main{
+    width: 600px;
+  }
+}
